@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Table Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <img src="S:\Hotel\logo.jpg" width="100px" height="100px">
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav><center>
+<div class="container">
+  <h2>Table Booking</h2>
+  <form  action="/submitbook" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+    
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+    
+    <label for="room">Rooms:</label>
+    <textarea id="room" name="room" rows="4"></textarea>
+    
+    <button type="submit" name="sub">Book Table</button>
+    <p id="confirmationMessage"></p>
+  </form>
+  
+  
+</div>
+<script src="book.js">
+<footer>
+  <p>&copy; 2024 Hotel purvi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
